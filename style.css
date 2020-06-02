@@ -1,0 +1,229 @@
+/*************/
+/* CSS Reset */
+/*************/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/***********************************************/
+/* HTML5 display-role reset for older browsers */
+/***********************************************/
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Roboto;
+}
+
+body {
+    line-height: 1;
+    font-size: 1.6rem; /* = 16px */
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/*****************/
+/* HTML Headings */
+/*****************/
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 5.0rem; /* = 50px */
+}
+
+h2 {
+    font-size: 3.0rem; /* = 30px */
+}
+
+h3 {
+    font-size: 2.4rem; /* = 24px */
+}
+
+h4{
+    font-size: 1.8rem; /* = 18px */
+}
+
+h5, h6 {
+    font-size: 1.4rem; /* = 14px */
+}
+
+/************/
+/* Elements */
+/************/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    border: 1px solid green;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#next {
+    align-content: center;
+}
+
+hr {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/**********/
+/* Colors */
+/**********/
+
+header, button, footer, a {
+    color: #fdcb46;
+    background-color: #579c87;
+}
+
+#premier {
+    background-color: #fcdfdb;
+    border: 1px solid blue;
+}
+
+#deuxieme {
+    background-color: #fff5fe;
+    border: 1px solid red;
+}
+
+#troisieme {
+    background-color: #f9f9f9;
+    border: 1px solid blue;
+}
+
+#quatrieme {
+    background-color: #fdfffd;
+    border: 1px solid red;
+}
+
+
+
+/*******************************************************************/
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+/*******************************************************************/
+
+@media (min-width:320px) { 
+
+header {
+    height: 4em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+}
+
+section:not(#next) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    height: 30rem;  
+    margin-bottom: 3rem;
+}
+
+#next {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+
+button {
+    font-size: 2rem;
+    padding: 1rem 5rem 1rem 5rem;
+    border-radius: 2rem;
+    margin-bottom: 5rem;
+}
+
+footer {
+    height: 6rem;
+}
+
+}
+
+/********************************************************/
+/* tablet, landscape iPad, lo-res laptops ands desktops */ 
+/********************************************************/
+
+@media (min-width:768px) { 
+
+section:not(#next) {
+    flex-direction: row;
+    height: 76rem;
+}
+
+
+}
+
+/************************************************/
+/* big landscape tablets, laptops, and desktops */ 
+/************************************************/
+
+@media (min-width:991px) {
+
+#container {
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid red;
+}
+
+h1, h2, p {
+    text-align: center;
+    padding: 9.5rem;
+}
+
+main {
+    flex-direction: row;
+}
+
+#premier, #troisieme {
+    margin-right: 10.3rem;
+}
+
+}
