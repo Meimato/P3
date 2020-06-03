@@ -83,7 +83,7 @@ footer {
     justify-content: space-around;
 }
 
-h1, h2, p {
+h1, h2, section {
     text-align: center;
 }
 
@@ -107,34 +107,43 @@ hr {
     margin-bottom: 3rem;
 }
 
+
+
 a {
     text-decoration: none;
 }
 
-.row {
+ul > li {
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    border: 1px solid green;
 }
 
 .desc {
-    width: 70%;
+    border: 1px solid red;
+    text-align: left;
+    margin: 1rem 2rem; 
 }
 
-.prince {
-    width: 10%;
+.price {
+    margin-right: 1rem;
+    text-align: right;
+    border: 1px solid red;
 }
+
 
 /**********/
 /* Colors */
 /**********/
 
-#title, button, footer, a {
+#title, button, .footer > a, footer {
     color: #fdcb46;
     background-color: #579c87;
 }
 
-#premier {
+#premier, #first_menu {
     background-color: #fcdfdb;
     border: 1px solid blue;
 }
@@ -154,31 +163,27 @@ a {
     border: 1px solid red;
 }
 
-
-
 /*******************************************************************/
 /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 /*******************************************************************/
 
-@media (min-width:320px) { 
-
 #title {
-    height: 4em;
+    height: 5em;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    margin: 3rem;
+    margin: 2rem 3rem;
 }
 
-section:not(#next) {
+#premier, #deuxieme, #troisieme, #quatrieme {
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 100%;
     height: 30rem;  
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 #next {
@@ -198,7 +203,6 @@ footer {
     height: 6rem;
 }
 
-}
 
 /********************************************************/
 /* tablet, landscape iPad, lo-res laptops ands desktops */ 
@@ -206,8 +210,7 @@ footer {
 
 @media (min-width:768px) { 
 
-section:not(#next) {
-    flex-direction: row;
+#premier, #deuxieme, #troisieme, #quatrieme {
     height: 76rem;
 }
 
@@ -220,19 +223,9 @@ section:not(#next) {
 
 @media (min-width:991px) {
 
-#container {
-    margin: 0 auto;
-    padding: 0;
-    border: 1px solid red;
-}
-
 h1, h2, p {
     text-align: center;
     padding: 9.5rem;
-}
-
-main {
-    flex-direction: row;
 }
 
 #premier, #troisieme {
