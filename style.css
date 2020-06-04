@@ -76,14 +76,13 @@ h5, h6 {
 footer {
     position: fixed;
     bottom: 0;
-    border: 1px solid green;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-h1, h2, h4, section {
+h1, h2, h3, h4, h5, h6, section {
     text-align: center;
 }
 
@@ -111,6 +110,7 @@ a {
     text-decoration: none;
 }
 
+
 ul > li {
     width: 100%;
     display: flex;
@@ -129,12 +129,12 @@ ul > li {
 /* Colors */
 /**********/
 
-#title, button, .footer > a, footer {
+#title, button, .footer > a, footer, #title > a {
     color: #fdcb46;
     background-color: #579c87;
 }
 
-#premier, #first_menu {
+#premier, #menu_1 {
     background-color: #fcdfdb;
 }
 
@@ -148,6 +148,10 @@ ul > li {
 
 #quatrieme {
     background-color: #fdfffd;
+}
+
+#premier, #deuxieme, #troisieme, #quatrieme, #menu_1 {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 /*******************************************************************/
@@ -182,6 +186,15 @@ button {
     font-size: 2rem;
     padding: 1rem 5rem;
     border-radius: 2rem;
+}
+
+body > h2 {
+    padding: 6rem;
+}
+
+#menu_1 {
+    margin: 0 2rem 8rem 2rem;
+    padding: 5rem;
 }
 
 footer {
@@ -249,13 +262,13 @@ footer {
     }
 
     .menu_row {
-        justify-content: space-between;
         padding: 0;
         margin: 0;
     }
 
     .left {
-        width: 50%;
+        width: 50%; 
+        margin-right: 10rem;
     }
 
     .right {
@@ -268,7 +281,49 @@ footer {
         margin-bottom: 8.4rem;
     }
 
+    #container {
+        margin: 0 auto;
+    }
+
+    #menu_1 {
+        margin: 0 16rem 27.2rem 16rem;
+        padding: 12.5rem;
+    }
+
     footer {
         height: 13.6rem;
+    }
+
+    h1 {
+        font-size: 6.8rem;
+    }
+
+    h2 {
+        margin: 9.6rem auto 5rem auto;
+        font-size: 5.2rem;
+    }
+
+    h3 {
+        font-size: 4.0rem;
+    }
+
+    h4 {
+        font-size: 3.2rem;
+    }
+
+    h5 {
+        font-size: 2.1rem;
+    }
+
+    h6 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 2.1rem;
+    }
+
+    a {
+        font-size: 3.0rem;
     }
 }
