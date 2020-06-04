@@ -83,7 +83,7 @@ footer {
     justify-content: space-around;
 }
 
-h1, h2, section {
+h1, h2, h4, section {
     text-align: center;
 }
 
@@ -107,8 +107,6 @@ hr {
     margin-bottom: 3rem;
 }
 
-
-
 a {
     text-decoration: none;
 }
@@ -116,21 +114,14 @@ a {
 ul > li {
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid green;
+    margin-bottom: 1rem;
 }
 
 .desc {
-    border: 1px solid red;
-    text-align: left;
-    margin: 1rem 2rem; 
-}
-
-.price {
-    margin-right: 1rem;
-    text-align: right;
-    border: 1px solid red;
+    margin: 1rem; 
 }
 
 
@@ -145,22 +136,18 @@ ul > li {
 
 #premier, #first_menu {
     background-color: #fcdfdb;
-    border: 1px solid blue;
 }
 
 #deuxieme {
     background-color: #fff5fe;
-    border: 1px solid red;
 }
 
 #troisieme {
     background-color: #f9f9f9;
-    border: 1px solid blue;
 }
 
 #quatrieme {
     background-color: #fdfffd;
-    border: 1px solid red;
 }
 
 /*******************************************************************/
@@ -172,16 +159,15 @@ ul > li {
 }
 
 main {
-    display: flex;
     flex-direction: column;
-    margin: 2rem 3rem;
+    padding: 1rem;
+    margin: 1.5rem auto 8rem auto;
 }
 
 #premier, #deuxieme, #troisieme, #quatrieme {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 100%;
     height: 30rem;  
     margin-bottom: 2rem;
 }
@@ -189,14 +175,13 @@ main {
 #next {
     display: flex;
     justify-content: center;
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 0;
 }
 
 button {
     font-size: 2rem;
-    padding: 1rem 5rem 1rem 5rem;
+    padding: 1rem 5rem;
     border-radius: 2rem;
-    margin-bottom: 5rem;
 }
 
 footer {
@@ -210,10 +195,35 @@ footer {
 
 @media (min-width:768px) { 
 
-#premier, #deuxieme, #troisieme, #quatrieme {
-    height: 76rem;
-}
+    #premier, #deuxieme, #troisieme, #quatrieme {
+        height: 76rem;
+    }
 
+    .left {
+        width: 36%
+    }
+
+    .right {
+        width: 36%;
+    }
+
+    ul > li {
+        flex-direction: row;
+    }
+
+    .desc {
+        text-align: left;
+    }
+
+    .price {
+        margin-right: 1rem;
+        text-align: right;
+    }
+
+    .menu_row {
+        display: flex;
+        justify-content: space-evenly;
+    }
 
 }
 
@@ -221,15 +231,44 @@ footer {
 /* big landscape tablets, laptops, and desktops */ 
 /************************************************/
 
-@media (min-width:991px) {
+@media (min-width:1199px) {
 
-h1, h2, p {
-    text-align: center;
-    padding: 9.5rem;
-}
+    #title {
+        height: 24rem;
+        font-weight: bolder;
+    }
 
-#premier, #troisieme {
-    margin-right: 10.3rem;
-}
+    #premier, #deuxieme, #troisieme, #quatrieme {
+        max-width: 54rem;
+        margin-bottom: 9rem;
+    }
 
+    main {
+        margin: 0;
+        padding: 10rem 16rem;
+    }
+
+    .menu_row {
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+    }
+
+    .left {
+        width: 50%;
+    }
+
+    .right {
+        width: 50%;
+    }
+
+    button {
+        width: 65.4rem;
+        height: 12rem;
+        margin-bottom: 8.4rem;
+    }
+
+    footer {
+        height: 13.6rem;
+    }
 }
