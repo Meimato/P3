@@ -101,9 +101,23 @@ main {
     align-content: center;
 }
 
+.bloc {
+    display: flex;
+    align-items: center;
+    margin: 3rem 0;
+}
+
 hr {
-    width: 100%;
-    margin-bottom: 3rem;
+    width: 90%;
+    height: 0.2rem;
+    border: none;
+    border-top: 0.2rem solid black;
+    border-bottom: 0.2rem solid black;
+}
+
+h4 {
+    font-size: larger;
+    margin: 0 3rem;
 }
 
 a {
@@ -138,19 +152,19 @@ ul > li {
     background-color: #fcdfdb;
 }
 
-#deuxieme {
+#deuxieme, #menu_2 {
     background-color: #fff5fe;
 }
 
-#troisieme {
+#troisieme, #menu_3 {
     background-color: #f9f9f9;
 }
 
-#quatrieme {
+#quatrieme, #menu_4 {
     background-color: #fdfffd;
 }
 
-#premier, #deuxieme, #troisieme, #quatrieme, #menu_1 {
+#premier, #deuxieme, #troisieme, #quatrieme, #menu_1, #menu_2, #menu_3, #menu_4 {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
@@ -188,13 +202,13 @@ button {
     border-radius: 2rem;
 }
 
-body > h2 {
+h2 {
     padding: 6rem;
 }
 
-#menu_1 {
+#menu_1, #menu_2, #menu_3, #menu_4 {
     margin: 0 2rem 8rem 2rem;
-    padding: 5rem;
+    padding: 2rem;
 }
 
 footer {
@@ -285,7 +299,7 @@ footer {
         margin: 0 auto;
     }
 
-    #menu_1 {
+    #menu_1, #menu_2, #menu_3, #menu_4 {
         margin: 0 16rem 27.2rem 16rem;
         padding: 12.5rem;
     }
@@ -308,6 +322,8 @@ footer {
     }
 
     h4 {
+        width: 100%;
+        margin: 0 12rem;
         font-size: 3.2rem;
     }
 
