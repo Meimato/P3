@@ -54,11 +54,11 @@ h1 {
 }
 
 h2 {
-    font-size: 3.0rem; /* = 30px */
+    font-size: 4.0rem; /* = 30px */
 }
 
 h3 {
-    font-size: 2.4rem; /* = 24px */
+    font-size: 5.0rem; /* = 24px */
 }
 
 h4{
@@ -108,7 +108,7 @@ main {
 }
 
 hr {
-    width: 90%;
+    width: 70%;
     height: 0.2rem;
     border: none;
     border-top: 0.2rem solid black;
@@ -117,13 +117,16 @@ hr {
 
 h4 {
     font-size: larger;
-    margin: 0 3rem;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
 }
 
+h3 {
+    padding: 3rem 0;
+}
 
 ul > li {
     width: 100%;
@@ -168,6 +171,119 @@ ul > li {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
+#sec_1 {
+    color: #c67412;
+}
+
+#sec_1 > .bloc > hr {
+    border-top: 0.2rem solid  #c67412;
+    border-bottom: 0.2rem solid  #c67412;
+}
+
+#sec_2 {
+    color: #a56799;
+}
+
+#sec_2 > .bloc > hr {
+    border-top: 0.2rem solid  #a56799;
+    border-bottom: 0.2rem solid  #a56799;
+}
+
+#sec_3 {
+    color: #6e4ccc;
+}
+
+#sec_3 > .bloc > hr {
+    border-top: 0.2rem solid  #6e4ccc;
+    border-bottom: 0.2rem solid  #6e4ccc;
+}
+
+section.le_chic > h2 {
+    background: -webkit-linear-gradient(left, #c67412, #a56799, #6e4ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section.le_delice > h2 {
+    background: -webkit-linear-gradient(left, #0228dd, #0670f3, #229df9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
+section.la_palette > h2 {
+    background: -webkit-linear-gradient(top left, #41963c, #beff7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;        
+}
+
+.fa-music {
+    background-image: linear-gradient(to right, #f05861, #f6916a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
+hr.first_blue_hr {
+    width: 70%;
+    height: 0.2rem;
+    border: none;
+    border-top: 0.6rem double #0228dd;
+}
+
+hr.second_blue_hr {
+    width: 70%;
+    height: 0.2rem;
+    border: none;
+    border-top: 0.6rem double #0670f3;
+}
+
+hr.third_blue_hr {
+    width: 70%;
+    height: 0.2rem;
+    border: none;
+    border-top: 0.6rem double #229df9;
+}
+
+hr.green_hr_left {
+    width: 70%;
+    height: 0.5rem;
+    border: none;
+    background: -webkit-linear-gradient(left, #41963c, #beff7f);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.green_hr_right {
+    width: 70%;
+    height: 0.5rem;
+    border: none;
+    background: -webkit-linear-gradient(right, #41963c, #beff7f);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+}
+
+/*********/
+/* Fonts */
+/*********/
+
+.desc, .price, h1, #container > h2, h4, button, footer {
+    font-family: 'Kalam', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.la_note {
+    font-family: 'Cookie', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.le_chic {
+    font-family: 'Amita', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.le_delice {
+    font-family: 'Alex Brush', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.la_palette {
+    font-family: 'Kaushan Script', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 /*******************************************************************/
 /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 /*******************************************************************/
@@ -203,7 +319,7 @@ button {
 }
 
 h2 {
-    padding: 6rem;
+    padding: 2rem;
 }
 
 #menu_1, #menu_2, #menu_3, #menu_4 {
@@ -215,7 +331,6 @@ footer {
     height: 6rem;
 }
 
-
 /********************************************************/
 /* tablet, landscape iPad, lo-res laptops ands desktops */ 
 /********************************************************/
@@ -223,7 +338,7 @@ footer {
 @media (min-width:768px) { 
 
     #premier, #deuxieme, #troisieme, #quatrieme {
-        height: 76rem;
+        height: 36rem;
     }
 
     .left {
@@ -266,6 +381,7 @@ footer {
     }
 
     #premier, #deuxieme, #troisieme, #quatrieme {
+        height: 76rem;
         max-width: 54rem;
         margin-bottom: 9rem;
     }
@@ -313,17 +429,16 @@ footer {
     }
 
     h2 {
-        margin: 9.6rem auto 5rem auto;
+        padding: 6rem;
         font-size: 5.2rem;
     }
 
     h3 {
-        font-size: 4.0rem;
+        font-size: 6.0rem;
     }
 
     h4 {
         width: 100%;
-        margin: 0 12rem;
         font-size: 3.2rem;
     }
 
@@ -343,3 +458,4 @@ footer {
         font-size: 3.0rem;
     }
 }
+
