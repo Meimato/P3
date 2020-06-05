@@ -79,7 +79,11 @@ footer {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.footer {
+    margin: 0 4rem;
 }
 
 h1, h2, h3, h4, h5, h6, section {
@@ -167,7 +171,12 @@ ul > li {
     background-color: #fdfffd;
 }
 
-#premier, #deuxieme, #troisieme, #quatrieme, #menu_1, #menu_2, #menu_3, #menu_4 {
+#legal {
+    color: white;
+    background-color: #579c87;
+}
+
+#premier, #deuxieme, #troisieme, #quatrieme, #menu_1, #menu_2, #menu_3, #menu_4, #legal {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
@@ -198,19 +207,20 @@ ul > li {
     border-bottom: 0.2rem solid  #6e4ccc;
 }
 
-section.le_chic > h2 {
+section.le_chic > h2, h3.le_chic {
     background: -webkit-linear-gradient(left, #c67412, #a56799, #6e4ccc);
+    background-clip: content-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-section.le_delice > h2 {
+section.le_delice > h2, h3.le_delice {
     background: -webkit-linear-gradient(left, #0228dd, #0670f3, #229df9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;    
 }
 
-section.la_palette > h2 {
+section.la_palette > h2, h3.la_palette {
     background: -webkit-linear-gradient(top left, #41963c, #beff7f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;        
@@ -264,7 +274,7 @@ hr.green_hr_left {
 /* Fonts */
 /*********/
 
-.desc, .price, h1, #container > h2, h4, button, footer {
+.desc, .price, h1, #container > h2, h4, h5, button, footer, #legal {
     font-family: 'Kalam', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -322,9 +332,31 @@ h2 {
     padding: 2rem;
 }
 
-#menu_1, #menu_2, #menu_3, #menu_4 {
+h5 {
+    padding: 2rem;
+}
+
+#menu_1, #menu_2, #menu_3, #menu_4, #legal {
     margin: 0 2rem 8rem 2rem;
     padding: 2rem;
+}
+
+.price {
+    font-weight: bold;
+}
+
+#legal {
+    text-align: justify;
+}
+
+#legal > h2, #legal > h3 {
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+#legal > p > a, #legal > p > a:visited {
+    font-size: 3rem;
+    color: white;
 }
 
 footer {
@@ -353,8 +385,10 @@ footer {
         flex-direction: row;
     }
 
-    .desc {
+    .desc > p {
+        
         text-align: left;
+        font-size: 3rem;
     }
 
     .price {
@@ -406,6 +440,7 @@ footer {
     }
 
     button {
+        font-size: 5rem;
         width: 65.4rem;
         height: 12rem;
         margin-bottom: 8.4rem;
@@ -415,7 +450,7 @@ footer {
         margin: 0 auto;
     }
 
-    #menu_1, #menu_2, #menu_3, #menu_4 {
+    #menu_1, #menu_2, #menu_3, #menu_4, #legal {
         margin: 0 16rem 27.2rem 16rem;
         padding: 12.5rem;
     }
@@ -443,7 +478,8 @@ footer {
     }
 
     h5 {
-        font-size: 2.1rem;
+        padding: 5rem;
+        font-size: 5rem;
     }
 
     h6 {
