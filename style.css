@@ -49,16 +49,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bolder;
 }
 
-h1 {
+h1, h3 {
     font-size: 5.0rem; /* = 50px */
 }
 
 h2 {
     font-size: 4.0rem; /* = 30px */
-}
-
-h3 {
-    font-size: 5.0rem; /* = 24px */
 }
 
 h4, h5, h6 {
@@ -105,14 +101,6 @@ main {
     display: flex;
     align-items: center;
     margin: 3rem 0;
-}
-
-hr {
-    width: 70%;
-    height: 0.2rem;
-    border: none;
-    border-top: 0.2rem solid black;
-    border-bottom: 0.2rem solid black;
 }
 
 h4 {
@@ -171,7 +159,7 @@ ul > li {
     background-color: #fdfffd;
 }
 
-#legal {
+#legal, h4:after {
     color: white;
     background-color: #579c87;
 }
@@ -271,7 +259,6 @@ hr.green_hr_left {
     border: none;
     background: -webkit-linear-gradient(right, #41963c, #beff7f);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-
 }
 
 /**************/
@@ -311,7 +298,7 @@ hr.green_hr_left {
     }
 }
 
-.prochainement:after {
+.prochainement:hover:after {
     content: '';
 	letter-spacing: .15em; 
 	animation-name: typing;
@@ -325,6 +312,40 @@ hr.green_hr_left {
     50%  { content: '..'; }
     75%  { content: '...'; }
     100% { content: ''; }
+}
+
+.footer:hover {
+    animation-name: wiggle;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+}
+
+@keyframes wiggle {
+    0% { transform: skewX(9deg); } 
+    10% { transform: skewX(-8deg); } 
+    20% { transform: skewX(7deg); } 
+    30% { transform: skewX(-6deg); } 
+    40% { transform: skewX(5deg); } 
+    50% { transform: skewX(-4deg); } 
+    60% { transform: skewX(3deg); } 
+    70% { transform: skewX(-2deg); } 
+    80% { transform: skewX(1deg); } 
+    90% { transform: skewX(0deg); } 
+    100% { transform: skewX(0deg); } 
+}
+
+h4:after {    
+    content: '';
+    display: block;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    height: 1rem;
+    margin: 1rem 0 0;
+    width: 0;
+}
+
+h4:hover:after {
+    left: 0;
+    width: 100%;
 }
 
 /*********/
@@ -435,6 +456,14 @@ footer {
 
     .right {
         width: 36%;
+    }
+
+    hr {
+        width: 70%;
+        height: 0.2rem;
+        border: none;
+        border-top: 0.2rem solid black;
+        border-bottom: 0.2rem solid black;
     }
 
     ul > li {
