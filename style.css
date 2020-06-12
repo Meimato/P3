@@ -368,7 +368,7 @@ hr {
     margin: 0;
     padding: 0;
     border: none;
-    display: hidden;
+    display: none;
 }
 
 #menu_1, #menu_2, #menu_3, #menu_4, #legal {
@@ -416,6 +416,7 @@ footer {
     }
 
     hr {
+        display: block;
         width: 70%;
         height: 0.2rem;
         border: none;
