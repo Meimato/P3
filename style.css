@@ -61,12 +61,8 @@ h3 {
     font-size: 5.0rem; /* = 24px */
 }
 
-h4{
+h4, h5, h6 {
     font-size: 1.8rem; /* = 18px */
-}
-
-h5, h6 {
-    font-size: 1.4rem; /* = 14px */
 }
 
 /************/
@@ -150,9 +146,13 @@ ul > li {
 /* Colors */
 /**********/
 
-#title, button, .footer > a, footer, #title > a {
+#title, h6, footer, #title > a {
     color: #fdcb46;
     background-color: #579c87;
+}
+
+.footer > a {
+    color: #fdcb46;
 }
 
 #premier, #menu_1 {
@@ -278,7 +278,7 @@ hr.green_hr_left {
 /* Fonts */
 /*********/
 
-.desc, .price, h1, #container > h2, h4, h5, button, footer, #legal {
+.desc, .price, h1, #container > h2, h4, h5, h6, footer, #legal {
     font-family: 'Kalam', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -326,7 +326,7 @@ main {
     margin: 1rem 0;
 }
 
-button {
+h6 {
     font-size: 2rem;
     padding: 1rem 5rem;
     border-radius: 2rem;
@@ -442,7 +442,7 @@ footer {
         width: 50%;
     }
 
-    button {
+    h6 {
         font-size: 5rem;
         width: 65.4rem;
         height: 12rem;
@@ -492,10 +492,6 @@ footer {
     h5 {
         padding: 5rem;
         font-size: 5rem;
-    }
-
-    h6 {
-        font-size: 1.4rem;
     }
 
     p {
