@@ -366,6 +366,7 @@ h6 {
 
 hr {
     width: 0;
+    border: none;
 }
 
 #menu_1, #menu_2, #menu_3, #menu_4, #legal {
