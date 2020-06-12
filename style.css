@@ -274,6 +274,59 @@ hr.green_hr_left {
 
 }
 
+/**************/
+/* Animations */
+/**************/
+
+.zoom {
+    animation-name: reverse-zoom;
+    animation-duration: 1s;
+}
+
+.zoom:hover {
+    animation-name: zoom;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.2);
+        opacity: 0.6;
+    }
+}
+
+@keyframes reverse-zoom {
+    from {
+        transform: scale(1.2);
+        opacity: 0.6;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.prochainement:after {
+    content: '';
+	letter-spacing: .15em; 
+	animation-name: typing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+    0%   { content: ''; }
+    25%  { content: '.'; }
+    50%  { content: '..'; }
+    75%  { content: '...'; }
+    100% { content: ''; }
+}
+
 /*********/
 /* Fonts */
 /*********/
