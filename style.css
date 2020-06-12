@@ -194,18 +194,21 @@ section.le_chic > h2, h3.le_chic {
 
 section.le_delice > h2, h3.le_delice {
     background: -webkit-linear-gradient(left, #0228dd, #0670f3, #229df9);
+    background-clip: content-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;    
 }
 
 section.la_palette > h2, h3.la_palette {
     background: -webkit-linear-gradient(top left, #41963c, #beff7f);
+    background-clip: content-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;        
 }
 
 .fa-music {
     background-image: linear-gradient(to right, #f05861, #f6916a);
+    background-clip: content-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;    
 }
@@ -426,7 +429,6 @@ footer {
     }
 
     .desc > p {
-        
         text-align: left;
         font-size: 3rem;
     }
