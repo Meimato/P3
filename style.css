@@ -444,7 +444,11 @@ footer {
     }
 
     a {
-        font-size: 2rem;
+        font-size: 3rem;
+    }
+
+    h6 {
+        font-size: 4rem;
     }
 
     /******/
@@ -596,8 +600,5 @@ footer {
         font-size: 2.1rem;
     }
 
-    a {
-        font-size: 3.0rem;
-    }
 }
 
