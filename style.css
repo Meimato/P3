@@ -443,6 +443,10 @@ footer {
         justify-content: space-evenly;
     }
 
+    a {
+        font-size: 2rem;
+    }
+
     /******/
     /* HR */
     /******/
