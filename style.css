@@ -250,7 +250,7 @@ section.la_palette > h2, h3.la_palette {
     }
 }
 
-.prochainement:hover:after {
+.prochainement:after {
     content: '';
 	letter-spacing: .15em; 
 	animation-name: typing;
