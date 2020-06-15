@@ -54,16 +54,16 @@ h1, h3 {
 }
 
 h2 {
-    font-size: 4.0rem; /* = 30px */
+    font-size: 4.0rem; /* = 40px */
 }
 
 h4, h5, h6 {
     font-size: 1.8rem; /* = 18px */
 }
 
-/************/
-/* Elements */
-/************/
+/************************/
+/* Elements Positioning */
+/************************/
 
 footer {
     position: fixed;
@@ -169,7 +169,7 @@ ul > li {
     color: white;
 }
 
-#premier, #deuxieme, #troisieme, #quatrieme, #menu_1, #menu_2, #menu_3, #menu_4, #legal {
+.shadow {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
@@ -185,32 +185,26 @@ ul > li {
     color: #6e4ccc;
 }
 
-section.le_chic > h2, h3.le_chic {
-    background: -webkit-linear-gradient(left, #c67412, #a56799, #6e4ccc);
+.bg_gradient_box {
     background-clip: content-box;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;     
+}
+
+section.le_chic > h2, h3.le_chic {
+    background: -webkit-linear-gradient(left, #c67412, #a56799, #6e4ccc);
 }
 
 section.le_delice > h2, h3.le_delice {
-    background: -webkit-linear-gradient(left, #0228dd, #0670f3, #229df9);
-    background-clip: content-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;    
+    background: -webkit-linear-gradient(left, #0228dd, #0670f3, #229df9);  
 }
 
 section.la_palette > h2, h3.la_palette {
-    background: -webkit-linear-gradient(top left, #41963c, #beff7f);
-    background-clip: content-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;        
+    background: -webkit-linear-gradient(top left, #41963c, #beff7f);   
 }
 
 .fa-music {
-    background-image: linear-gradient(to right, #f05861, #f6916a);
-    background-clip: content-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;    
+    background-image: linear-gradient(to right, #f05861, #f6916a);  
 }
 
 /**************/
@@ -352,7 +346,6 @@ main {
     margin: 1rem 0;
 }
 
-
 h2 {
     padding: 2rem;
 }
@@ -470,41 +463,37 @@ footer {
         border-bottom: 0.2rem solid  #6e4ccc;
     }
 
-    hr.first_blue_hr {
+    .blue_hr {
         width: 70%;
         height: 0.2rem;
-        border: none;
+        border: none;        
+    }
+
+    hr.first_blue_hr {
         border-top: 0.6rem double #0228dd;
     }
 
     hr.second_blue_hr {
-        width: 70%;
-        height: 0.2rem;
-        border: none;
         border-top: 0.6rem double #0670f3;
     }
 
     hr.third_blue_hr {
-        width: 70%;
-        height: 0.2rem;
-        border: none;
         border-top: 0.6rem double #229df9;
     }
 
-    hr.green_hr_left {
+    .green_hr {
         width: 70%;
         height: 0.5rem;
         border: none;
-        background: -webkit-linear-gradient(left, #41963c, #beff7f);
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
 
+    .green_hr_left {
+        background: -webkit-linear-gradient(left, #41963c, #beff7f);
+    }
+
     .green_hr_right {
-        width: 70%;
-        height: 0.5rem;
-        border: none;
         background: -webkit-linear-gradient(right, #41963c, #beff7f);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
 
 }
@@ -518,6 +507,10 @@ footer {
     #title {
         height: 24rem;
         font-weight: bolder;
+    }
+
+    #container {
+        margin: 0 auto;
     }
 
     #premier, #deuxieme, #troisieme, #quatrieme {
@@ -545,34 +538,11 @@ footer {
         width: 50%;
     }
 
-    h6 {
-        font-size: 5rem;
-        width: 65.4rem;
-        margin-bottom: 8.4rem;
-    }
-
-    #container {
-        margin: 0 auto;
-    }
-
     #menu_1, #menu_2, #menu_3, #menu_4, #legal {
         margin: 0 16rem 27.2rem 16rem;
         padding: 12.5rem;
     }
-
     
-    #legal > h2, #legal > h3 {
-        font-size: 4rem;
-    }
-
-    #legal * {
-        font-size: 2rem;
-    }
-
-    footer {
-        height: 13.6rem;
-    }
-
     h1 {
         font-size: 6.8rem;
     }
@@ -596,9 +566,26 @@ footer {
         font-size: 5rem;
     }
 
+    h6 {
+        font-size: 5rem;
+        width: 65.4rem;
+        margin-bottom: 8.4rem;
+    }
+
     p {
         font-size: 2.1rem;
     }
 
+    footer {
+        height: 13.6rem;
+    }    
+    
+    #legal > h2, #legal > h3 {
+        font-size: 4rem;
+    }
+
+    #legal * {
+        font-size: 2rem;
+    }
 }
 
