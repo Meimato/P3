@@ -185,26 +185,32 @@ ul > li {
     color: #6e4ccc;
 }
 
-.bg_gradient_box {
-    background-clip: content-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;     
-}
-
 section.le_chic > h2, h3.le_chic {
     background: -webkit-linear-gradient(left, #c67412, #a56799, #6e4ccc);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
 }
 
 section.le_delice > h2, h3.le_delice {
     background: -webkit-linear-gradient(left, #0228dd, #0670f3, #229df9);  
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
 }
 
 section.la_palette > h2, h3.la_palette {
     background: -webkit-linear-gradient(top left, #41963c, #beff7f);   
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
 }
 
 .fa-music {
     background-image: linear-gradient(to right, #f05861, #f6916a);  
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
 }
 
 /**************/
